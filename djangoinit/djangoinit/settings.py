@@ -78,9 +78,9 @@ DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'basedatos',
-        'USER':'root',
-        'PASSWORD':'',
-        'HOST':'localhost',
+        'USER':'larcomuni',
+        'PASSWORD':'larcomuni',
+        'HOST':'85.10.205.173',
         'PORT':'3306'
     }
 }
