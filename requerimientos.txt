@@ -1,1 +1,11 @@
 Django==3.2.8
+withnoise
+mysql
+tensorflow
+tflearn
+nltk
+pipwin
+pyaudio
+SpeechRecognition
+gtts
+pyttsx3

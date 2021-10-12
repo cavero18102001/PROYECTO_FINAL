@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" {% static 'css/estilos.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/inicio.css' %} ">
     <title>Document</title>
 </head>
 
 <body>
-    <input type="checkbox" id="btn-modal">
-    <label for="btn-modal" class="lbl-modal">Abrir Modal</label>
     <div class="modal">
-        <div class="contenedor">
+        <div class="contenido">
             <header>¡Bienvenidos!</header>
-            <label for="btn-modal">X</label>
-            <div class="contenido">
-                <h3>
-                    <!-- Agregar un titulo -->
-                </h3>
-                <p>
-                    <!-- Agregar un mensaje -->
-                </p>
+            <div class="modalcuerpo">
+                <form class="form" method="post">
+                    {% csrf_token %}
+                    <input name='nombre' type="text" required maxlength="80" minlength="10">
+                    <label class="lbl-nombre">
+                    <span class="text-nomb">Nombre</span>
+                </label>
+                </form>
             </div>
         </div>
     </div>
